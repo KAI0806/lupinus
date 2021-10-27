@@ -1,0 +1,35 @@
+@charset "UTF-8";
+header .header_top h2::after{
+    position: absolute;
+    content: "事業内容";
+    font-size: 1.8rem;
+    color: #606060;
+    bottom: -1rem;
+    left: 32rem;
+}
+
+#top_content{
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    height: 35rem;
+    background: url("../img/service_top_img.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#top_content div{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 4.5rem 14rem;
+    width: calc(115.5rem - 28rem);
+    right: 0;
+    top: 28rem;
+}
+
+#top_content div h2{
+    margin-bottom: 4.3rem;
+}
+
+#top_content div p{
+    font-size: 2.8rem;
+}

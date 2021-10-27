@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+#mv{
+    height: 108rem;
+    width: 100vw;
+    background: url("../img/mv.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+}
+
+#mv .mv_txt{
+    position: absolute;
+    top: 13.8rem;
+    right: 25.4rem;
+}
+
+#mv .mv_txt h1{
+    font-size: 6rem;
+    color: white;
+}
+
+#mv .mv_txt h1 span{
+    font-size: 3.2rem;
+    font-weight: 100;
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+#mv .menu{
+    width: calc(100% - 10.13rem);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 10.13rem;
+    background: url("../img/mv_menu_bg.svg") no-repeat center center/cover;
+    height: calc(19.682rem - 3.39rem);
+    padding-bottom: 3.39rem;
+}
+
+#mv .menu img{
+    width: 26.955rem;
+}
+
+#mv .menu nav{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mv .menu nav ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#mv .menu nav ul li{
+    text-align: center;
+}
+
+#mv .menu nav ul li a{
+    font-size: 2.8rem;
+    text-align: center;
+    color: #606060;
+    transition: all .2s ease-in-out;
+}
+
+#mv .menu nav ul li a:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+#mv .menu nav ul li a span{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* content01 */
+#content01{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 18.5rem;
+    position: relative;
+}
+
+#content01::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 30rem;
+    bottom: -25rem;
+    background: url("../img/borderline.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+
+#content01 img{
+    width: 96rem;
+}
+
+#content01 .inner{
+    padding: 9.3rem 10.9rem 7.4rem 10.9rem;
+}
+
+#content01 .inner h2{
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    margin-bottom: 7.2rem;
+    position: relative;
+}
+
+#content01 .inner h2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 5.5rem;
+    width: 14.6rem;
+    height: 13.5rem;
+    background: url("../img/title_symbol.svg") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#content01 .inner p{
+    float: left;
+}
+
+#content01 .inner a{
+    color: white;
+    font-size: 2.4rem;
+    background: #2C2C2C;
+    padding: 2.7rem 5.4rem;
+    float: right;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+}
+
+/* content02 */
+#content02{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    margin-bottom: 8.2rem;
+}
+
+#content02 img{
+    width: 96rem;
+}
+
+#content02 .inner{
+    padding: 15.8rem 10.9rem 7.4rem 10.9rem;
+}
+
+#content02 .inner h2{
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    margin-bottom: 7.2rem;
+    position: relative;
+}
+
+#content02 .inner h2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 5.5rem;
+    width: 14.6rem;
+    height: 13.5rem;
+    background: url("../img/title_symbol.svg") no-repeat center center/contain;
+    z-index: -1;
+}
+
+#content02 .inner p{
+    float: left;
+}
+
+#content02 .inner a{
+    color: white;
+    font-size: 2.4rem;
+    background: #2C2C2C;
+    padding: 2.7rem 5.4rem;
+    float: right;
+}
+
+/* map */
+#map{
+    margin-bottom: 10rem;
+}
+
+#map iframe{
+    width: 100%;
+    height: 60rem;
+}

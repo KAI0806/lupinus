@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+header .header_top h2::after{
+    position: absolute;
+    content: "会社概要";
+    font-size: 1.8rem;
+    color: #606060;
+    bottom: -1rem;
+    left: 32rem;
+}
+
+#message{
+    margin-bottom: 9.6rem;
+}
+
+#message .wrap{
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#message h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #2C2C2C;
+    margin-bottom: 4.4rem;
+    line-height: 100%;
+    position: relative;
+}
+
+#message h1::before{
+    position: absolute;
+    content: "";
+    width: 55rem;
+    height: .1rem;
+    background: #707070;
+    left: 0;
+    transform: translate(50%, -50%);
+    top: 1.5rem;
+}
+
+#message h1::after{
+    position: absolute;
+    content: "";
+    width: 55rem;
+    height: .1rem;
+    background: #707070;
+    right: 0;
+    transform: translate(-50%, -50%);
+    top: 1.5rem;
+}
+
+#message h1 span{
+    font-size: 1.8rem;
+    color: #606060;
+}
+
+#message img{
+    margin-bottom: 3.6rem;
+}
+
+#message h2{
+    margin-bottom: 3.2rem;
+}
+
+#message p{
+    font-size: 2.8rem;
+    width: 60%;
+    margin: auto;
+}
+
+/* detail */
+#details{
+    margin-bottom: 10rem;
+}
+
+#details .wrap{
+    background: #2C2C2C;
+    color: white;
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6.9rem 0;
+}
+
+#details .wrap h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 100%;
+    position: relative;
+    margin-bottom: 8.8rem;
+}
+
+#details .wrap h1 span{
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+#details h1::before{
+    position: absolute;
+    content: "";
+    width: 35.7rem;
+    height: .1rem;
+    background: white;
+    left: -58rem;
+    transform: translate(50%, -50%);
+    top: 1.5rem;
+}
+
+#details h1::after{
+    position: absolute;
+    content: "";
+    width: 35.7rem;
+    height: .1rem;
+    background: white;
+    right: -58rem;
+    transform: translate(-50%, -50%);
+    top: 1.5rem;
+}
+
+#details .wrap .table{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+#details .wrap .table .row{
+    width: 100%;
+    border-bottom: .1rem solid #707070;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+#details .wrap .table .row:first-child{
+    padding-top: 0;
+}
+
+#details .wrap .table .row p{
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin-left: 4.8rem;
+}
+
+#details .wrap .table .row .title{
+    font-weight: 900;
+    width: 25%;
+}
+
+#details .wrap iframe{
+    width: 110rem;
+    height: 35.9rem;
+}

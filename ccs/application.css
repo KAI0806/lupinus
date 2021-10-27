@@ -1,0 +1,340 @@
+@charset "UTF-8";
+html{
+    font-size: 0.5208vw;
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-weight: 300;
+    line-height: 100%;
+    font-size: 3.6rem;
+    color: #2C2C2C;
+}
+
+h3{
+    font-weight: 300;
+    line-height: 100%;
+}
+
+p{
+    font-size: 2.8rem;
+    font-weight: 100;
+}
+
+body{
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN',sans-serif;
+    overflow-x: hidden;
+    color: #606060;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    line-height: 100%;
+}
+
+.mintyo{
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+header .header_top{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("../img/header_bg.jpg") no-repeat center center/cover;
+}
+
+header .header_top h2{
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    font-size: 5rem;
+    position: relative;
+    color: #606060;
+}
+
+header .header_top h2::before{
+    position: absolute;
+    content: "";
+    height: .1rem;
+    width: 4rem;
+    background: #2C2C2C;
+    bottom: 1rem;
+    left: 26rem;
+}
+
+header .header_bottom{
+    width: 85%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: auto;
+    margin-top: 6.8rem;
+    margin-bottom: 11.7rem;
+}
+
+header .header_bottom a img{
+    width: 26.955rem;
+    transition: all .3s ease-in-out;
+}
+
+header .header_bottom a img:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+header .header_bottom nav{
+    width: 60%;
+}
+
+header .header_bottom nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header .header_bottom nav ul li{
+    text-align: center;
+}
+
+header .header_bottom nav ul li{
+    width: 15%;
+    position: relative;
+}
+
+header .header_bottom nav ul li a{
+    font-size: 2.8rem;
+    color: #606060;
+    position: relative;
+}
+
+header .header_bottom nav ul li::after{
+    position: absolute;
+    content: "";
+    height: .5rem;
+    width: 14.1rem;
+    right: 100%;
+    margin-right: -50%;
+    transform: translate(50%, 50%);
+    bottom: 2rem;
+    background: #E1E1E1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+header .header_bottom nav ul li:hover::after{
+    opacity: 1;
+    bottom: -1rem;
+    transition: all .5s ease-out;
+}
+
+.is_current::before{
+    position: absolute;
+    content: "";
+    height: .5rem;
+    width: 14.1rem;
+    right: 100%;
+    margin-right: -50%;
+    transform: translate(50%, 50%);
+    bottom: -1rem;
+    background: #E1E1E1;
+}
+
+.is_current::after{
+    opacity: 0 !important;
+}
+
+header .header_bottom nav ul li a span{
+    font-size: 1.8rem;
+}
+
+/* contact */
+#contact{
+    position: relative;
+}
+
+#contact .top_button{
+    position: absolute;
+    font-size: 1.8rem;
+    right: 16.7rem;
+    color: #2C2C2C;
+    top: 0;
+    transform: rotateZ(-90deg);
+}
+
+#contact .top_button::before{
+    position: absolute;
+    content: "";
+    width: 6.583rem;
+    height: .1rem;
+    top: 50%;
+    left: 9rem;
+    transform: translate(0, -50%);
+    background: #2C2C2C;
+    transition: all .2s ease-in-out;
+}
+
+#contact .top_button::after{
+    position: absolute;
+    content: "";
+    width: .5rem;
+    height: .6rem;
+    top: 50%;
+    left: 15.5rem;
+    transform: translate(0, -50%);
+    background: #2C2C2C;
+    transition: all .2s ease-in;
+}
+
+#contact .top_button:hover::before{
+    width: 10rem;
+    transition: all .2s ease-in;
+}
+
+#contact .top_button:hover::after{
+    left: 19rem;
+    transition: all .2s ease-in;
+}
+
+
+#contact .wrap{
+    width: calc(40% - 10.1rem);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: .1rem solid #2C2C2C;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
+    padding: 4.05rem 5.05rem;
+    color: #606060;
+    transition: all .3s ease-in-out;
+    background: white;
+}
+
+#contact .wrap div h3{
+    font-size: 2.8rem;
+    margin-bottom: 3.4rem;
+}
+
+#contact .wrap div p{
+    font-size: 1.3rem;
+}
+
+#contact .wrap > p{
+    font-size: 1.8rem;
+    position: relative;
+}
+
+#contact .wrap > p::before{
+    position: absolute;
+    content: "";
+    width: 7.4rem;
+    height: .1rem;
+    left: -9.4rem;
+    transform: translate(0, -50%);
+    top: 50%;
+    background: #EBEBEB;
+}
+
+#contact .wrap > p::after{
+    position: absolute;
+    content: "";
+    width: 3.7rem;
+    height: .1rem;
+    left: -9.4rem;
+    transform: translate(0, -50%);
+    top: 50%;
+    background: #2C2C2C;
+    transition: all .3s ease-in-out;
+}
+
+#contact .wrap:hover > p::after{
+    width: 7.4rem;
+    transition: all .3s ease-in; 
+}
+
+#contact .wrap:hover{
+    background-color: #EBEBEB;
+    transition: all .3s ease-in-out;
+}
+
+footer{
+    margin-top: 10rem;
+    border-top: 1rem solid #707070;
+    background: #EBEBEB;
+    padding-bottom: .9rem;
+}
+
+footer .wrap{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.3rem;
+    margin-bottom: 10.7rem;
+}
+
+footer .wrap a{
+    transition: all .3s ease-in-out;
+}
+
+footer .wrap a:hover{
+    opacity: .5;
+    transition: all .3s ease-in-out;
+}
+
+footer .wrap > a > img{
+    width: 26.955rem;
+}
+
+footer .wrap .footer_menu{
+    width: 30%;
+    transform: translateX(-5rem);
+}
+
+footer .wrap .footer_menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .wrap .footer_menu ul li a{
+    color: #606060;
+    font-size: 2.4rem;
+}
+
+footer .wrap .footer_sns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+}
+
+footer .wrap .footer_sns img{
+    width: 3.5rem;
+}
+footer .copylight{
+    font-size: 1.6rem;
+    text-align: center;
+}
