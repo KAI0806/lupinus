@@ -12,7 +12,7 @@
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 </head>
 <body>
-    <header>
+    <header class="pc_flex">
         <div class="header_top">
             <h2>CONTACT</h2>
         </div>
@@ -32,10 +32,10 @@
     <main>
         <section id="message">
             <div class="wrap">
-                <h1>CONTACT</h1>
+                <h1>CONTACT<br/><span class="sp_inline">お問合せ</span></h1>
 
                 <p>サービスや弊社へのお問い合わせ、求人に関る内容等以下フォームよりフォームよりお気軽にご連絡下さい。</p>
-                <p>※返信までに2営業日程お時間を頂く場合がございます。返信が来ない場合は直接 000-0000-0000 へご連絡ください。</p>
+                <p>※返信までに2営業日程お時間を頂く場合がございます。<br class="sp_only"/>返信が来ない場合は直接 000-0000-0000 へご連絡ください。</p>
             </div>
         </section>
 
@@ -55,7 +55,7 @@
                     </div>
 
                     <div>
-                        <label>お名前<br/><span>(必須)</span></label>
+                        <label>お名前<br class="pc_only"/><span>(必須)</span></label>
                         <div>
                             <input name="お名前" type="text" data-formrun-required>
                             <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
@@ -73,7 +73,7 @@
                     </div>
 
                     <div>
-                        <label>メールアドレス<br/><span>(必須)</span></label>
+                        <label>メールアドレス<br class="pc_only"/><span>(必須)</span></label>
                         <div>
                             <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
                             <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>

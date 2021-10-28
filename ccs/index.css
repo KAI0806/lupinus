@@ -192,3 +192,148 @@
     width: 100%;
     height: 60rem;
 }
+
+@media screen and (max-width: 767px) {
+    #mv{
+        height: 48.497rem;
+        width: 100%;
+        background: url("../img/mv_sp.png") no-repeat center center/cover;
+        margin-top: 4.67rem;
+        box-shadow: 2.73rem 1.7rem 0 #EBEBEB;
+    }
+
+    #content01{
+        flex-direction: column;
+    }
+
+    #content02{
+        flex-direction: column;
+    }
+
+    #content01::before{
+        display: none;
+    }
+
+    #content01 img{
+        width: 100%;
+    }
+
+    #content02 img{
+        width: 100%;
+    }
+
+    .sp_message{
+        padding: 8rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .sp_message::before{
+        position: absolute;
+        content: "Make your imagination come true";
+        font-size: 2.4rem;
+        color: #EBEBEB;
+        width: max-content;
+        transform: rotateZ(-90deg);
+        top: 6rem;
+        left: -18rem;
+    }
+
+    .sp_message h1{
+        line-height: 200%;
+        font-size: 3rem;
+        font-weight: 100;
+        color: #2C2C2C;
+    }
+
+    @keyframes scroll_var{
+        0%{
+            bottom: 0;
+        }
+        50%{
+            bottom: 1.5rem;
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+
+    .sp_message .scroll{
+        position: absolute;
+        bottom: 0;
+        right: 1.2rem;
+        animation: scroll_var 2s ease-in-out infinite;
+    }
+
+    .sp_message .scroll img{
+        width: 1.8rem;
+    }
+
+    #content01{
+        margin-bottom: 3.8rem;
+    }
+
+    #content01 .inner{
+        padding: 3.9rem 4.1rem 0;
+    }
+
+    #content01 .inner h2{
+        line-height: 150%;
+        margin-bottom: 2.3rem;
+    }
+
+    #content01 .inner h2::before{
+        width: 11.5rem;
+        height: 10.7rem;
+        right: -2rem;
+        top: -2rem;
+    }
+
+    #content01 .inner p{
+        margin-bottom: 1.5rem;
+    }
+
+    #content01 .inner a{
+        font-size: 1.4rem;
+        padding: 1rem .7rem;
+    }
+
+    #content02{
+        margin-bottom: 3.8rem;
+    }
+
+    #content02 .inner{
+        padding: 3.9rem 4.1rem 0;
+    }
+
+    #content02 .inner h2{
+        line-height: 150%;
+        margin-bottom: 2.3rem;
+    }
+
+    #content02 .inner h2::before{
+        width: 11.5rem;
+        height: 10.7rem;
+        right: -2rem;
+        top: -2rem;
+    }
+
+    #content02 .inner p{
+        margin-bottom: 1.5rem;
+    }
+
+    #content02 .inner a{
+        font-size: 1.4rem;
+        padding: 1rem .7rem;
+    }
+
+    #map{
+        margin-bottom: 1.5rem;
+    }
+
+    #map iframe{
+        height: 20rem;
+    }
+}

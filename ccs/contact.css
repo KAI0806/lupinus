@@ -103,11 +103,13 @@ label span{
 }
 
 #form .wrap form > .button_outer{
-    width: 50%;
+    width: calc(74.5rem + 4px);
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 0;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 button{
@@ -117,4 +119,106 @@ button{
     background: unset;
     color: #606060;
     margin-right: -2rem;
+}
+
+@media screen and (max-width: 767px){
+    #message{
+        margin-bottom: 3.2rem;
+    }
+
+    #message .wrap{
+        width: 95%;
+    }
+
+    #message h1{
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
+    }
+    
+    #message h1::before{
+        width: 12.5rem;
+        height: .1rem;
+        left: 4rem;
+        transform: translate(50%, -50%);
+        top: 1rem;
+    }
+    
+    #message h1::after{
+        width: 12.5rem;
+        height: .1rem;
+        right: 4rem;
+        transform: translate(-50%, -50%);
+        top: 1rem;
+    }
+    
+    #message h1 span{
+        font-size: 1.2rem;
+    }
+    
+    #message p{
+        font-size: 1.4rem;
+        width: unset;
+    }
+
+    #message p:nth-child(3){
+        font-size: 1.2rem;
+        margin-top: 2.6rem;
+    }
+
+    #form{
+        width: 90%;
+        border-left: none;
+        border-right: none;
+        border-top: 1rem solid #2C2C2C;
+        border-bottom: 2rem solid #2C2C2C;
+        padding: 1px 0;
+    }
+    
+    #form .wrap{
+        border-left: none;
+        border-right: none;
+        border-top: .5rem solid #2C2C2C;
+        border-bottom: 1rem solid #2C2C2C;
+        padding: 2.3rem 2.2rem;
+    }
+
+    #form .wrap form > div{
+        flex-direction: column;
+        margin-bottom: 2.3rem;
+    }
+
+    #form .wrap form > div > div{
+        width: 100%;
+    }
+
+    label, input, textarea{
+        font-size: 1.4rem;
+    }
+
+    label span{
+        font-size: 1.2rem;
+    }
+
+    input, textarea{
+        width: calc(100% - 4px)
+    }
+
+    input{
+        height: 2rem;
+    }
+
+    textarea{
+        height: 21.8rem;
+    }
+
+    #form .wrap form > .button_outer{
+        width: 100%;
+    }
+
+    button{
+        font-size: 1.4rem;
+        width: 100%;
+        margin-right: 0;
+        padding: .8rem 0;
+    }
 }

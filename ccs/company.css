@@ -61,6 +61,7 @@ header .header_top h2::after{
 
 #message img{
     margin-bottom: 3.6rem;
+    width: 20rem;
 }
 
 #message h2{
@@ -160,4 +161,118 @@ header .header_top h2::after{
 #details .wrap iframe{
     width: 110rem;
     height: 35.9rem;
+}
+
+@media screen and (max-width: 767px){
+    #message{
+        margin-bottom: 6rem;
+    }
+
+    #message .wrap{
+        width: 90%;
+    }
+
+    #message h1{
+        font-size: 2rem;
+        margin-bottom: 2.4rem;
+    }
+    
+    #message h1::before{
+        width: 12.5rem;
+        height: .1rem;
+        left: 4rem;
+        transform: translate(50%, -50%);
+        top: 1rem;
+    }
+    
+    #message h1::after{
+        width: 12.5rem;
+        height: .1rem;
+        right: 4rem;
+        transform: translate(-50%, -50%);
+        top: 1rem;
+    }
+    
+    #message h1 span{
+        font-size: 1.2rem;
+    }
+    
+    #message img{
+        margin-bottom: 1.5rem;
+        width: 11.3rem;
+    }
+    
+    #message h2{
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+    
+    #message p{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    #details{
+        margin-bottom: 1.5rem;
+    }
+
+    #details .wrap{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+
+    #details .wrap h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 3.5rem;
+    }
+
+    #details .wrap h1 span{
+        font-size: 1.2rem;
+    }
+    
+    #details h1::before{
+        width: 3.1rem;
+        left: -6rem;
+        top: .8rem;
+    }
+    
+    #details h1::after{
+        width: 3.1rem;
+        right: -6rem;
+        top: .8rem;
+    }
+
+    #details .wrap .table{
+        width: 100%;
+    }
+
+    #details .wrap .table .row{
+        flex-direction: column;
+        border: none;
+        padding: 0;
+        padding-bottom: 1.65rem;
+    }
+
+    #details .wrap .table .row:nth-child(7){
+        padding-bottom: 0;
+    }
+    
+    #details .wrap .table .row .title{
+        width: auto;
+        border-bottom: .1rem solid #FFFFFF;
+        padding-bottom: 0.45rem;
+        margin-bottom: 0.75rem;
+    }
+
+    #details .wrap .table .row p{
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 100%;
+    }
+
+    #details .wrap iframe{
+        width: 100%;
+        height: 20rem;
+    }
 }
