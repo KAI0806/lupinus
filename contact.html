@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問合せ｜Lupinus inc.</title>
+
+    <link rel="stylesheet" href="ccs/application.css">
+    <link rel="stylesheet" href="ccs/contact.css">
+
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header_top">
+            <h2>CONTACT</h2>
+        </div>
+        <div class="header_bottom">
+            <a href="index.html"><img src="img/logo.svg" alt="Lupinus inc."></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">TOP<span><br/>トップ</span></a></li>
+                    <li><a href="company.html">COMPANY<span><br/>会社概要</span></a></li>
+                    <li><a href="service.html">SERVICE<span><br/>事業内容</span></a></li>
+                    <li class="is_current"><a href="contact.html">CONTACT<span><br/>お問合せ</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="message">
+            <div class="wrap">
+                <h1>CONTACT</h1>
+
+                <p>サービスや弊社へのお問い合わせ、求人に関る内容等以下フォームよりフォームよりお気軽にご連絡下さい。</p>
+                <p>※返信までに2営業日程お時間を頂く場合がございます。返信が来ない場合は直接 000-0000-0000 へご連絡ください。</p>
+            </div>
+        </section>
+
+        <section id="form">
+            <div class="wrap">
+                <!-- class, action, methodを変更しないでください -->
+                <form class="formrun" action="https://form.run/api/v1/r/dd1zdt9xmlzfevuv08acvfro" method="post">
+                    <!-- ↓自由に要素を追加・編集することができます -->
+                    <div>
+                        <label>会社名</label>
+                        <input name="会社名" type="text">
+                    </div>
+
+                    <div>
+                        <label>所在地</label>
+                        <input name="所在地" type="text">
+                    </div>
+
+                    <div>
+                        <label>お名前<br/><span>(必須)</span></label>
+                        <div>
+                            <input name="お名前" type="text" data-formrun-required>
+                            <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>フリガナ</label>
+                        <input name="フリガナ" type="text">
+                    </div>
+
+                    <div>
+                        <label>電話番号</label>
+                        <input type="text" name="電話番号" data-formrun-type="tel">
+                    </div>
+
+                    <div>
+                        <label>メールアドレス<br/><span>(必須)</span></label>
+                        <div>
+                            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+                            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+                        </div>
+                    </div>
+                
+                    <div>
+                        <label>お問い合わせ内容</label><br/>
+                        <textarea name="お問い合わせ"></textarea>
+                    </div>
+                
+                    <!-- ボット投稿をブロックするためのタグ -->
+                    <div class="_formrun_gotcha">
+                    <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+                    <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+                    <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+                    </div>
+                    
+                    <div class="button_outer">
+                        <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <a href="index.html"><img src="img/logo.svg" alt="Lupinus inc."></a>
+
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="company.html">COMPANY</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_sns">
+                <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+                <a href=""><img src="img/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+            </div>
+        </div>
+        <p class="copylight">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Lupinus inc.</p>
+    </footer>
+    
+</body>
+</html>

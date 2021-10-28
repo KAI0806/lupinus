@@ -15,6 +15,7 @@ header .header_top h2::after{
     height: 35rem;
     background: url("../img/service_top_img.jpg") no-repeat center center/cover;
     position: relative;
+    margin-bottom: 37.2rem;
 }
 
 #top_content div{
@@ -24,6 +25,7 @@ header .header_top h2::after{
     width: calc(115.5rem - 28rem);
     right: 0;
     top: 28rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 16%);
 }
 
 #top_content div h2{
@@ -32,4 +34,94 @@ header .header_top h2::after{
 
 #top_content div p{
     font-size: 2.8rem;
+}
+
+/* content */
+#content{
+    width: 85%;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 15.2rem;
+}
+
+#content .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15.2rem;
+}
+
+#content .inner:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+#content .inner .service_img{
+    width: 72.1rem;
+    height: 51.5rem;
+    background: url("../img/service_sumple.jpg") no-repeat center center/contain;
+    position: relative;
+}
+
+#content .inner .service_img::before{
+    position: absolute;
+    content: "";
+    width: 72.1rem;
+    height: 51.5rem;
+    top: 5.2rem;
+    right: 4rem;
+    border: .1rem solid #2C2C2C;
+    z-index: -1;
+}
+
+#content .inner:nth-child(even) .service_img::before{
+    right: unset;
+    left: 4rem;
+}
+
+#content .inner .txt{
+    width: 50%;
+}
+
+#content .inner:nth-child(even) .txt div{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#content .inner .txt div{
+    width: 60%;
+    text-align: right;
+    margin-bottom: 7.2rem;
+}
+
+#content .inner .txt div h2{
+    border-bottom: .3rem solid #707070;
+    font-weight: 600;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#content .inner:nth-child(even) .txt div h2{
+    text-align: left;
+}
+
+#content .inner .txt div p{
+    font-size: 1.8rem;
+}
+
+#content .inner:nth-child(even) .txt div p{
+    text-align: left;
+}
+
+#content .inner .txt > p{
+    margin-left: 15rem;
+}
+
+#content .inner:nth-child(even) .txt > p{
+    margin-left: unset;
+    margin-right: 15rem;
+}
+
+#contact .top_button{
+    right: 13.7rem;
+    top: 8rem;
 }
