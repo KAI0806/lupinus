@@ -194,11 +194,15 @@
 }
 
 @media screen and (max-width: 767px) {
+
+    main{
+        padding-top: 4.67rem;
+    }
+
     #mv{
         height: 48.497rem;
         width: 100%;
         background: url("../img/mv_sp.png") no-repeat center center/cover;
-        margin-top: 4.67rem;
         box-shadow: 2.73rem 1.7rem 0 #EBEBEB;
     }
 

@@ -12,24 +12,57 @@
     <script src="https://sdk.form.run/js/v2/formrun.js"></script>
 </head>
 <body>
-    <header class="pc_flex">
-        <div class="header_top">
-            <h2>CONTACT</h2>
+    <header>
+        <div class="pc_only">
+            <div class="header_top">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="header_bottom">
+                <a href="index.html"><img src="img/logo.svg" alt="Lupinus inc."></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">TOP<span><br/>トップ</span></a></li>
+                        <li><a href="company.html">COMPANY<span><br/>会社概要</span></a></li>
+                        <li><a href="service.html">SERVICE<span><br/>事業内容</span></a></li>
+                        <li class="is_current"><a href="contact.html">CONTACT<span><br/>お問合せ</span></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="header_bottom">
-            <a href="index.html"><img src="img/logo.svg" alt="Lupinus inc."></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">TOP<span><br/>トップ</span></a></li>
-                    <li><a href="company.html">COMPANY<span><br/>会社概要</span></a></li>
-                    <li><a href="service.html">SERVICE<span><br/>事業内容</span></a></li>
-                    <li class="is_current"><a href="contact.html">CONTACT<span><br/>お問合せ</span></a></li>
-                </ul>
+        
+        <div class="sp_only">
+            <nav id="nav" class="sp_only">
+                <div class="nav_logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+
+                <div class="nav_wrap">
+
+                    <ul>
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="company.html">COMPANY</a></li>
+                        <li><a href="service.html">SERVICE</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="tell_wrap">
+                    <a href="tel:000-0000-0000">000-0000-0000</a>
+                </div>
             </nav>
+            <div id="hamburger" class="sp_only">
+                <span class="inner_line" id="line1"></span>
+                <span class="inner_line" id="line2"></span>
+                <span class="inner_line" id="line3"></span>
+            </div>
         </div>
     </header>
 
     <main>
+        <section id="kv" class="sp_flex">
+            <h2>CONTACT</h2>
+        </section>
+
         <section id="message">
             <div class="wrap">
                 <h1>CONTACT<br/><span class="sp_inline">お問合せ</span></h1>
@@ -120,6 +153,6 @@
         </div>
         <p class="copylight">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Lupinus inc.</p>
     </footer>
-    
+    <script src="js/menu.js"></script>
 </body>
 </html>
