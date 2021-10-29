@@ -675,24 +675,29 @@ footer .copylight{
 
     #line1 {
         top: 30%;
+        transition: all 1s ease-out;
     }
 
     #line2 {
         top: 49%;
+        transition: all 1s ease-out;
     }
 
     #line3 {
         bottom: 30%;
+        transition: all 1s ease-out;
     }
 
     .in{
         transform: translateX(-100%);
         opacity: 1 !important;
+        transition: all 1s ease-out;
     }
 
     .line_1,.line_2,.line_3{
         background: white;
         z-index: 100;
+        transition: all 1s ease-out;
     }
 
     .line_1 {
